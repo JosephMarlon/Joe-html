@@ -5,17 +5,16 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
-      <link rel="sytlesheet" href="reset.css">
-      <link rel="sytlesheet" href="style.css">
+      <link rel="stylesheet" href="CSS/style.css">
     </head>
 
     <body>
       <header>
-        <img src="images/Joseph Marlon Logo.png" alt="Logo for Joseph Marlon" class="logo">
+        <img class="logo" src="images/Joseph Marlon Logo.png" alt="Logo for Joseph Marlon" class="logo">
 
-        <nav class="menu">
-
-        <ul >
+        <nav>
+        
+        <ul class="menu" >
           <li> <a href="#AboutMe">About Me</a></li>
           <li><a href="#Websites">Websites</a></li>
           <li> <a href="#Designs">Designs</a></li>
@@ -26,64 +25,69 @@
       </header> 
       
       <!--Banner Section-->
-      <section id="banner">
+      <section class="banner">
 
-        <div id="banner-content">
-          <h1>WEBSITE <br> DEVELOPER</h1>
+       <div>
+          <h1 style="color: white;">WEBSITE DEVELOPER</h1>
           <hr>
-          <h2><UI/UX DESIGNER></h2>
-          <p>Aspring SoftWare Devoloper</p>
-          <img src="images/yoga_berries_website_banner__10_-removebg-preview__1_-removebg-preview.png">
+          <h2 style="color: white;">UI/UX DESIGNER</h2>
+          <p style="color: white;">Aspring SoftWare Devoloper</p>
+      </div>   
+          <img class="image" src="images/yoga_berries_website_banner__10_-removebg-preview__1_-removebg-preview.png">
 
-        </div>
+       
 
       </section>
 
       <!--SECTION B SKILLS-->
 
-      <section id="skils">
+      <section class="skills">
 
-        <ul>
-          <li><img type="icon" src="images/css-logo.png"></li>
-          <li><img type="icon" src="images/figma-1698087967030-2x-removebg-preview.png"></li>
-          <li><img type="icon" src="images/Wordpress Psd Icons Files Download Template Download on Pngtree.jpeg"></li>
-          <li><img type="icon" src="images/html.jpg"></li>
-          <li><img type="icon" src="images/logo-2582748_1280.webp"></li>
-          <li><img type="icon" src="images/1_1xragDxpymZFkaTPlgghmQ-removebg-preview.png"></li>
+      <div class="icon container">
+        <ul class="good">
+          <li id="icon"><img type="icon" src="images/css-logo.png" width="60px" height="60pxpx"></li>
+          <li id="icon"><img type="icon" src="images/figma-1698087967030-2x-removebg-preview.png" width="90px" height="90px"></li>
+          <li id="icon"><img type="icon" src="images/Wordpress Psd Icons Files Download Template Download on Pngtree.jpeg" width="60px" height="60px"></li>
+          <li id="icon"><img type="icon" src="images/html.jpg" width="60px" height="60px"></li>
+          <li id="icon"><img type="icon" src="images/logo-2582748_1280.webp" width="60px" height="60px"></li>
+          <li id="icon"><img type="icon" src="images/1_1xragDxpymZFkaTPlgghmQ-removebg-preview.png" width="80px" height="60px"></li>
         </ul>
+      </div>  
       </section>
 
       <!--SECTION PROJECTS-->
 
-      <section id="projects">
-        <ul>
-          <li id="Websites"><img  src="images/WEBSITE afrikaan (3).png">WEBSITES</li>
-          <li id="Designs"><img  src="images/WEBSITE afrikaan (1).png">DESIGNS</li>
-          <li><img type="icon" src="images/WEBSITE afrikaan (6).png"> <h3> POSTERS</h3></li>
+      <section class="projects">
+        <ul class="pro">
+          <li id="Websites"><img class="proj" src="images/WEBSITE afrikaan (3).png"><h3>WEBSITES</h3></li>
+          <li id="Designs"><img class="proj" src="images/WEBSITE afrikaan (1).png"><h3>DESIGNS</h3></li>
+          <li id="Posters"><img  class="proj"src="images/WEBSITE afrikaan (6).png"> <h3> POSTERS</h3></li>
           
         </ul>
       </section>
 
       <!--SECTION CONTACT US-->
       <section id="contact">
-
+      <div class="contact">
         <h2> Lets's Build Something <br> Together</h2>
         <hr>
-        <P> Say Hi On Whatsapp</P>
-        <img type="icon" src="images/ig Icon.png">
-         
-        <P>Let's Connect</P>
-        <ul>
-          <li><img type="icon" src="images/ig Icon.png"></li>
-          <li><img type="icon" src="images/linkedin Icon.png"></li>
-          <li><img type="icon" src="images/ig Icon.png"></li>
-
+        <div>
+            <P> Say Hi On Whatsapp</P>
+            <img class="whatsapp" type="icon" src="images/ig Icon.png">
+        </div>
+        <div>
+           <P>Let's Connect</P>
+          <ul class="socials">
+             <li> <a href="https://www.instagram.com/josephmarlon_digital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img type="icon" src="images/ig Icon.png"></a></li>
+             <li><img type="icon" src="images/linkedin Icon.png"></li>
+             <li><img type="icon" src="images/ig Icon.png"></li>
         </ul>
-
-        <img type="logo" src="images/Joseph Marlon Logo.png">
-        <img src="images/vb .png" alt="a phone mockup for vb accommodation">
-
-
+        </div>
+        <div class="mockup">
+           <img type="logo" src="images/Joseph Marlon Logo.png">
+           <img src="images/vb .png" alt="a phone mockup for vb accommodation">
+      </div>
+      </div>
 
       </section>
 
