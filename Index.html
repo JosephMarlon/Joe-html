@@ -5,16 +5,17 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
-      <link rel="stylesheet" href="CSS/style.css">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="./output.css" rel="stylesheet">
     </head>
 
-    <body>
-      <header>
-        <img class="logo" src="images/Joseph Marlon Logo.png" alt="Logo for Joseph Marlon" class="logo">
+    <body class="bg-black">
+      <header class="flex flex-row space-x-96">
+        <img class="w-16 h-auto ml-28" src="images/Joseph Marlon Logo.png" alt="Logo for Joseph Marlon" class="logo">
 
-        <nav>
+        <nav class="text-white">
         
-        <ul class="menu" >
+        <ul class="flex flex-grow p-6 space-x-5 ml-40 hover:text-blue-600">
           <li> <a href="#AboutMe">About Me</a></li>
           <li><a href="#Websites">Websites</a></li>
           <li> <a href="#Designs">Designs</a></li>
@@ -25,15 +26,15 @@
       </header> 
       
       <!--Banner Section-->
-      <section class="banner">
+      <section class="flex flex-row ml-28 space-x-44">
 
-       <div>
-          <h1 style="color: white;">WEBSITE DEVELOPER</h1>
-          <hr>
-          <h2 style="color: white;">UI/UX DESIGNER</h2>
-          <p style="color: white;">Aspring SoftWare Devoloper</p>
+       <div  class=" mt-40">
+          <h1 class="text-white font-bold text-5xl mb-2">WEBSITE DEVELOPER</h1>
+          <hr class="w-66">
+          <h2 class="text-white font-bold text-4xl mt-2">UI/UX DESIGNER</h2>
+          <p class="text-white text-2xl">Aspring SoftWare Devoloper</p>
       </div>   
-          <img class="image" src="images/yoga_berries_website_banner__10_-removebg-preview__1_-removebg-preview.png">
+          <img class="ml-8" src="images/yoga_berries_website_banner__10_-removebg-preview__1_-removebg-preview.png">
 
        
 
@@ -42,26 +43,40 @@
       <!--SECTION B SKILLS-->
 
       <section class="skills">
+        <style> 
+          @keyframes moveRightToLeft
+           { 0% { transform: translateX(200%); }
+           100% { transform: translateX(-200%); } }
 
-      <div class="icon container">
-        <ul class="good">
-          <li id="icon"><img type="icon" src="images/css-logo.png" width="60px" height="60pxpx"></li>
-          <li id="icon"><img type="icon" src="images/figma-1698087967030-2x-removebg-preview.png" width="90px" height="90px"></li>
-          <li id="icon"><img type="icon" src="images/Wordpress Psd Icons Files Download Template Download on Pngtree.jpeg" width="60px" height="60px"></li>
-          <li id="icon"><img type="icon" src="images/html.jpg" width="60px" height="60px"></li>
-          <li id="icon"><img type="icon" src="images/logo-2582748_1280.webp" width="60px" height="60px"></li>
-          <li id="icon"><img type="icon" src="images/1_1xragDxpymZFkaTPlgghmQ-removebg-preview.png" width="80px" height="60px"></li>
-        </ul>
+            .moving-icons 
+            { display: inline-block;
+            white-space: nowrap;
+             animation: moveRightToLeft 10s linear infinite; }
+            </style> 
+
+      <div class=" moving-icons ">
+        <div class="flex flex-row min-h-screen w-24 h-24 space-x-52">
+          <li> <img src="images/html5-without-wordmark-color-logo-png_seeklogo-184157-removebg-preview.png" alt=""></li>
+          <li><img src="images/css-3-logo-png_seeklogo-426083-removebg-preview.png" alt=""></li>
+          <li><img src="tailwind.config.js" alt=""></li>
+          <li><img src="images/javascript-js-logo-png_seeklogo-273557-removebg-preview.png" alt=""></li>
+          <li><img src="images/wordpress-logo-png_seeklogo-429757-removebg-preview (1).png" alt=""></li>
+          <li><img src="images/figma-logo-png_seeklogo-332042-removebg-preview.png" alt=""></li>
+          <li><img src="images/adobe-xd-logo-png_seeklogo-377585-removebg-preview.png" alt=""></li>
+       
+        </div>
+        
+          
       </div>  
       </section>
 
       <!--SECTION PROJECTS-->
 
-      <section class="projects">
-        <ul class="pro">
-          <li id="Websites"><img class="proj" src="images/WEBSITE afrikaan (3).png"><h3>WEBSITES</h3></li>
-          <li id="Designs"><img class="proj" src="images/WEBSITE afrikaan (1).png"><h3>DESIGNS</h3></li>
-          <li id="Posters"><img  class="proj"src="images/WEBSITE afrikaan (6).png"> <h3> POSTERS</h3></li>
+      <section class="flex flex-row ">
+        <ul class="flex flex-row space-x-3 ">
+          <li id="Websites"><img class="hover:scale-124" src="images/WEBSITE afrikaan (3).png"><h3>WEBSITES</h3></li>
+          <li id="Designs"><img class="hover:scale-124" src="images/WEBSITE afrikaan (1).png"><h3>DESIGNS</h3></li>
+          <li id="Posters"><img  class="hover:scale-124"src="images/WEBSITE afrikaan (6).png"> <h3> POSTERS</h3></li>
           
         </ul>
       </section>
