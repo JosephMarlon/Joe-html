@@ -15,10 +15,11 @@
 
         <nav class="text-white">
         
-        <ul class="flex flex-grow p-6 space-x-5 ml-40 hover:text-blue-600">
-          <li> <a href="#AboutMe">About Me</a></li>
-          <li><a href="#Websites">Websites</a></li>
-          <li> <a href="#Designs">Designs</a></li>
+        <ul class="flex flex-grow p-6 space-x-5 ml-72 font-semibold">
+          <li class=" hover:text-blue-600"> <a href="#AboutMe">About Me</a></li>
+          <li class=" hover:text-blue-600"><a href="#Websites">Websites</a></li>
+          <li class=" hover:text-blue-600"> <a href="#Designs">Designs</a></li>
+          <li class=" hover:text-blue-600"> <a href="#Designs">Github</a></li>
         </ul>
 
         </nav>
@@ -29,7 +30,7 @@
       <section class="flex flex-row ml-28 space-x-44">
 
        <div  class=" mt-40">
-          <h1 class="text-white font-bold text-5xl mb-2">WEBSITE DEVELOPER</h1>
+          <h1 class="text-white font-bold text-5xl mb-4">WEBSITE DEVELOPER</h1>
           <hr class="w-66">
           <h2 class="text-white font-bold text-4xl mt-2">UI/UX DESIGNER</h2>
           <p class="text-white text-2xl">Aspring SoftWare Devoloper</p>
@@ -42,27 +43,27 @@
 
       <!--SECTION B SKILLS-->
 
-      <section class="skills">
+      <section>
         <style> 
           @keyframes moveRightToLeft
-           { 0% { transform: translateX(200%); }
-           100% { transform: translateX(-200%); } }
+           { 0% { transform: translateX(100%); }
+           100% { transform: translateX(-100%); } }
 
             .moving-icons 
             { display: inline-block;
             white-space: nowrap;
-             animation: moveRightToLeft 10s linear infinite; }
+             animation: moveRightToLeft 15s linear infinite; }
             </style> 
 
       <div class=" moving-icons ">
-        <div class="flex flex-row min-h-screen w-24 h-24 space-x-52">
-          <li> <img src="images/html5-without-wordmark-color-logo-png_seeklogo-184157-removebg-preview.png" alt=""></li>
-          <li><img src="images/css-3-logo-png_seeklogo-426083-removebg-preview.png" alt=""></li>
-          <li><img src="tailwind.config.js" alt=""></li>
-          <li><img src="images/javascript-js-logo-png_seeklogo-273557-removebg-preview.png" alt=""></li>
-          <li><img src="images/wordpress-logo-png_seeklogo-429757-removebg-preview (1).png" alt=""></li>
-          <li><img src="images/figma-logo-png_seeklogo-332042-removebg-preview.png" alt=""></li>
-          <li><img src="images/adobe-xd-logo-png_seeklogo-377585-removebg-preview.png" alt=""></li>
+        <div class="flex flex-row mb-36 space-x-52">
+          <li> <img class="h-12 w-20" src="images/html5-without-wordmark-color-logo-png_seeklogo-184157-removebg-preview.png" alt=""></li>
+          <li><img class="h-12 w-20"  src="images/css-3-logo-png_seeklogo-426083-removebg-preview.png" alt=""></li>
+          <li><img class="h-12 w-20"  src="images/tailwind-css-logo-png_seeklogo-354675-removebg-preview (1).png" alt=""></li>
+          <li><img class="h-12 w-20"  src="images/javascript-js-logo-png_seeklogo-273557-removebg-preview.png" alt=""></li>
+          <li><img class="h-12 w-20"  src="images/wordpress-logo-png_seeklogo-429757-removebg-preview (1).png" alt=""></li>
+          <li><img class="h-12 w-20"  src="images/figma-logo-png_seeklogo-332042-removebg-preview.png" alt=""></li>
+          <li><img class="h-12 w-20" src="images/adobe-xd-logo-png_seeklogo-377585-removebg-preview.png" alt=""></li>
        
         </div>
         
@@ -72,43 +73,52 @@
 
       <!--SECTION PROJECTS-->
 
-      <section class="flex flex-row ">
-        <ul class="flex flex-row space-x-3 ">
-          <li id="Websites"><img class="hover:scale-124" src="images/WEBSITE afrikaan (3).png"><h3>WEBSITES</h3></li>
-          <li id="Designs"><img class="hover:scale-124" src="images/WEBSITE afrikaan (1).png"><h3>DESIGNS</h3></li>
-          <li id="Posters"><img  class="hover:scale-124"src="images/WEBSITE afrikaan (6).png"> <h3> POSTERS</h3></li>
+      <section>
+        <h2 class="text-white text-6xl ml-14 mb-14 font-bold">Projects</h2>
+        <ul class="flex flex-row space-x-3 mr-16 ml-16 text-white font-black text-center text-3xl">
+          <li id="Websites"><img class="transform hover:scale-110 transition duration-500 ease-in-out" src="images/WEBSITE afrikaan (3).png"><h3 class="mt-10">WEBSITES</h3></li>
+          <li id="Designs"><img class="transform hover:scale-110 transition duration-500 ease-in-out" src="images/WEBSITE afrikaan (1).png"><h3 class="mt-10">DESIGNS</h3></li>
+          <li id="Posters"><img  class="transform hover:scale-110 transition duration-500 ease-in-out"src="images/WEBSITE afrikaan (6).png"> <h3 class="mt-10"> POSTERS</h3></li>
           
         </ul>
       </section>
 
       <!--SECTION CONTACT US-->
-      <section id="contact">
-      <div class="contact">
-        <h2> Lets's Build Something <br> Together</h2>
-        <hr>
-        <div>
-            <P> Say Hi On Whatsapp</P>
-            <img class="whatsapp" type="icon" src="images/ig Icon.png">
+      <section id="contact" >
+        <h2 class="text-white font-bold text-3xl mt-10 ml-14 mb-10"> Lets's Build Something <br> Together</h2>
+        <hr class="border-blue-400">
+        <!--Div for the whole section-->
+        <div class="flex flex-row  space-x-28 justify-center">
+        <!--div for the whatapp button-->
+          <div class="mt-24">
+            <P class="text-blue-700 mb-10 font-semibold"> Say Hi On Whatsapp</P>
+            <img class="h-20 w-26 transform hover:scale-110 transition duration-500 ease-in-out" src="images/whatsapp icon.png">
+          </div>
+          <!--div for the logo inbetween the socials-->
+          <div>
+             <img type="logo" src="images/Joseph Marlon Logo.png">
+          </div>
+          <!--div for my other socials-->
+          <div class="mt-24">
+            <P class="text-white mb-10 font-semibold">Let's Connect</P>
+           <ul class="flex place-items-center space-x-4">
+              <li> <ahref="https://www.instagram.com/josephmarlon_digital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img  class="w-14 w-14 transform hover:scale-110 transition duration-500 ease-in-out" src="images/gmail.com.png"></a></li>
+              <li><img class="h-14 w-14 transform hover:scale-110 transition duration-500 ease-in-out" src="images/linkedin Icon.png"></li>
+              <li><img class="h-14 w-14 transform hover:scale-110 transition duration-500 ease-in-out" src="images/Github icon.png"></li>
+            </ul>
+          </div>
         </div>
-        <div>
-           <P>Let's Connect</P>
-          <ul class="socials">
-             <li> <a href="https://www.instagram.com/josephmarlon_digital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img type="icon" src="images/ig Icon.png"></a></li>
-             <li><img type="icon" src="images/linkedin Icon.png"></li>
-             <li><img type="icon" src="images/ig Icon.png"></li>
-        </ul>
-        </div>
-        <div class="mockup">
-           <img type="logo" src="images/Joseph Marlon Logo.png">
-           <img src="images/vb .png" alt="a phone mockup for vb accommodation">
-      </div>
-      </div>
+
+       
+        
+        
+        
 
       </section>
 
       <!--Footer-->
-      <footer>
-        <P>COPY RIGHT Joseph MARLON 2024Y</P>
+      <footer class="text-white bg-blue-500  pt-4 pb-4">
+        <P class=" text-center items-center">COPY RIGHT Joseph MARLON 2025</P>
       </footer>
     </body>
 
